@@ -1,0 +1,47 @@
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+#page {
+	//padding: 0 4%;
+}
+
+#masthead,
+#content,
+#colophon {
+	padding: 0 4%;
+}
+
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+#masthead {
+	text-align: center;
+	margin: 4em auto;
+
+	.avatar {
+		@include border-radius(50px, 50px);
+	}
+
+	h1.site-title {
+		font-size: $base__font-size * 3px;
+		margin-bottom: 0;
+	}
+
+	h2.site-description {
+		border-bottom: 1px solid $color__hr;
+		font-family: $serif;
+		font-size: $base__font-size * .8px;
+		font-style: italic;
+		font-weight: 200;
+		margin: 0 auto 40px auto;
+		padding: 0 0 40px 0;
+		width: 40%;
+	}
+}
+
+/* Put this somewhere */
+.paging-navigation {
+	clear: both;
+}

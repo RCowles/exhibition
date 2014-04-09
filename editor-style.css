@@ -1,0 +1,483 @@
+/*
+Theme Name: exhibition
+Description: Used to style the TinyMCE editor.
+*/
+/**
+ * Table of Contents:
+ *
+ * 1.0 - HTML
+ * 2.0 - Normalize
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Links
+ * 6.0 - Alignments
+ * 7.0 - Media
+ * 8.0 - Post Formats
+ * 9.0 - RTL
+ * ----------------------------------------------------------------------------
+ */
+/*--------------------------------------------------------------
+1.0 - HTML
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 - Normalize
+--------------------------------------------------------------*/
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/* line 10, scss/partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 17, scss/partials/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 26, scss/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 43, scss/partials/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 53, scss/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 60, scss/partials/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* line 70, scss/partials/_normalize.scss */
+a {
+  background: transparent; }
+
+/* line 75, scss/partials/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 85, scss/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 90, scss/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 96, scss/partials/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 102, scss/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 108, scss/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 114, scss/partials/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 119, scss/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 126, scss/partials/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 129, scss/partials/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 138, scss/partials/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 143, scss/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 152, scss/partials/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 157, scss/partials/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 163, scss/partials/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 168, scss/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 187, scss/partials/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 198, scss/partials/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 206, scss/partials/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/* line 216, scss/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 225, scss/partials/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 231, scss/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 239, scss/partials/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 248, scss/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 257, scss/partials/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 265, scss/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+/* line 273, scss/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 279, scss/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 287, scss/partials/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 293, scss/partials/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 299, scss/partials/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 308, scss/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 312, scss/partials/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/*--------------------------------------------------------------
+3.0 - Typography
+--------------------------------------------------------------*/
+/* line 5, scss/partials/_typography.scss */
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+/* line 15, scss/partials/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif; }
+
+/* line 24, scss/partials/_typography.scss */
+h1 {
+  text-transform: uppercase; }
+
+/* line 27, scss/partials/_typography.scss */
+p {
+  margin-bottom: 1.5em; }
+
+/* line 30, scss/partials/_typography.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 34, scss/partials/_typography.scss */
+dfn,
+cite,
+em,
+i {
+  font-style: italic; }
+
+/* line 40, scss/partials/_typography.scss */
+blockquote {
+  margin: 0 1.5em; }
+
+/* line 43, scss/partials/_typography.scss */
+address {
+  margin: 0 0 1.5em; }
+
+/* line 46, scss/partials/_typography.scss */
+pre {
+  background: #eeeeee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+/* line 57, scss/partials/_typography.scss */
+code,
+kbd,
+tt,
+var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+
+/* line 63, scss/partials/_typography.scss */
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+/* line 68, scss/partials/_typography.scss */
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+/* line 73, scss/partials/_typography.scss */
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 81, scss/partials/_typography.scss */
+sup {
+  bottom: 1ex; }
+
+/* line 84, scss/partials/_typography.scss */
+sub {
+  top: .5ex; }
+
+/* line 87, scss/partials/_typography.scss */
+small {
+  font-size: 75%; }
+
+/* line 90, scss/partials/_typography.scss */
+big {
+  font-size: 125%; }
+
+/*--------------------------------------------------------------
+4.0 - Elements
+--------------------------------------------------------------*/
+/* line 5, scss/partials/_elements.scss */
+hr {
+  background-color: #cccccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+/* line 11, scss/partials/_elements.scss */
+ul,
+ol {
+  margin: 0 0 1.5em 3em; }
+
+/* line 15, scss/partials/_elements.scss */
+ul {
+  list-style: disc; }
+
+/* line 18, scss/partials/_elements.scss */
+ol {
+  list-style: decimal; }
+
+/* line 21, scss/partials/_elements.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+/* line 26, scss/partials/_elements.scss */
+dt {
+  font-weight: bold; }
+
+/* line 29, scss/partials/_elements.scss */
+dd {
+  margin: 0 1.5em 1.5em; }
+
+/* line 32, scss/partials/_elements.scss */
+img {
+  height: auto;
+  max-width: 100%; }
+
+/* line 36, scss/partials/_elements.scss */
+figure {
+  margin: 0; }
+
+/* line 39, scss/partials/_elements.scss */
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+/* line 43, scss/partials/_elements.scss */
+th {
+  font-weight: bold; }
+
+/*--------------------------------------------------------------
+5.0 - Links
+--------------------------------------------------------------*/
+/* line 5, scss/partials/_links.scss */
+a {
+  color: #333333;
+  text-decoration: none; }
+
+/* line 9, scss/partials/_links.scss */
+a:visited {
+  color: #333333; }
+
+/* line 12, scss/partials/_links.scss */
+a:hover,
+a:focus,
+a:active {
+  color: #666666; }
+
+/*--------------------------------------------------------------
+6.0 - Alignments
+--------------------------------------------------------------*/
+/* line 5, scss/partials/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+/* line 10, scss/partials/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+/* line 15, scss/partials/_alignments.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+/*--------------------------------------------------------------
+7.0 - Media
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+8.0 - Post formats
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.0 - RTL
+--------------------------------------------------------------*/
+/* line 76, scss/editor-style.scss */
+html .mceContentBody.rtl {
+  direction: rtl;
+  unicode-bidi: embed; }
+
+/* line 80, scss/editor-style.scss */
+.rtl ol,
+.rtl ul {
+  padding: 0 40px 0 0; }
+
+/* line 84, scss/editor-style.scss */
+.rtl .wp-caption,
+.rtl tr th {
+  text-align: right; }
+
+/* line 88, scss/editor-style.scss */
+.rtl td {
+  padding: 6px 0 6px 10px;
+  text-align: right; }
+
+/* line 92, scss/editor-style.scss */
+.rtl blockquote blockquote {
+  margin-left: 0;
+  margin-right: 24px; }
+
+/* line 96, scss/editor-style.scss */
+.rtl.post-format-audio:before,
+.rtl.post-format-status:before,
+.rtl.post-format-status > p:first-child:before {
+  background: none;
+  content: none; }
