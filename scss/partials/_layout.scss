@@ -8,17 +8,27 @@
 
 #masthead,
 #content,
+//#secondary,
 #colophon {
-	padding: 0 4%;
+	margin: 0 auto;
+	padding: 4em 4%;
 }
 
+#content {
+	max-width: 1800px;
+}
+
+/* Put this somewhere */
+.paging-navigation {
+	clear: both;
+}
 
 /*--------------------------------------------------------------
-Header
+Masthead
 --------------------------------------------------------------*/
 #masthead {
 	text-align: center;
-	margin: 4em auto;
+	margin: 0 auto;
 
 	.avatar {
 		@include border-radius(50px, 50px);
@@ -41,7 +51,39 @@ Header
 	}
 }
 
-/* Put this somewhere */
-.paging-navigation {
-	clear: both;
+// Dark masthead and footer
+#masthead,
+#colophon {
+	background: invert($color__pre-background);
+	color: lighten($color__primary-text, 20%);
+
+	a {
+		color: invert($color__link--hover);
+	}
+	a:visited {
+		color: invert($color__link);
+	}
+	a:hover,
+	a:focus,
+	a:active {
+		color: lighten(invert($color__link), 20%);
+	}
+}
+
+.single #masthead {
+	background: none;
+}
+
+/*--------------------------------------------------------------
+Secondary
+--------------------------------------------------------------*/
+#secondary  {
+	padding: 4em 0;
+
+	.widget {
+		display: block;
+		float: left;
+		padding: 1%;
+		width: 24%;
+	}
 }

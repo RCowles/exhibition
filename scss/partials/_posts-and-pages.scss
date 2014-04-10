@@ -32,22 +32,8 @@ Blog index
 --------------------------------------------------------------*/
 .blog {
 
-	.sticky {
-		//height: 60% !important;
-		//width: 60% !important;
-		font-size: $base__font-size * 1.5px;
-		width: 63.6% !important;
-		margin-bottom: 0;
-
-			h1 {
-				font-size: $base__font-size * 4px;
-				line-height: .2;
-			}
-
-		img {
-			width: 100%;
-			height: 100%;
-		}
+	.hentry {
+		margin: 0;
 	}
 
 	.post {
@@ -56,8 +42,9 @@ Blog index
 		//margin: 5% 5% 0 0;
 		//width: 28%;
 		//height: 100%;
-		margin: 0 1.5% 3% 1.5%;
-		width: 30.3333%;
+		//margin: 0 1.5% 3% 1.5%;
+		margin: 0.5%;
+		width: 32.3333%;
 		display: block;
 		text-align: center;
 
@@ -67,6 +54,7 @@ Blog index
 
 		img {
 			opacity: 1.0;
+			vertical-align: middle;
 		}
 
 		header {
@@ -102,6 +90,24 @@ Blog index
 			}
 		}
 	}
+
+	.sticky {
+		//height: 60% !important;
+		//width: 60% !important;
+		font-size: $base__font-size * 1.5px;
+		width: 65.666% !important;
+		margin-bottom: 0;
+
+			h1 {
+				font-size: $base__font-size * 4px;
+				line-height: .2;
+			}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 
 /*--------------------------------------------------------------
@@ -123,6 +129,7 @@ Single
 
 	#masthead {
 		//margin: 0 auto;
+		margin: 4em 0;
 		color: invert($color__primary-text);
 		position: absolute;
 		left: 10%;

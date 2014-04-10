@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 1800; /* pixels */
 }
 
 if ( ! function_exists( '_exhibition_setup' ) ) :
@@ -46,8 +46,9 @@ function _exhibition_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'blog-thumb', 500, 500, true ); // Thumbnails for blog index
-	add_image_size( 'blog-full', 1800, 500, true ); // Thumbnails for single
+	add_image_size( 'blog-thumb', 600, 600, true ); // Thumbnails for blog index
+	//add_image_size( 'blog-full', 1800, 800, true ); // Thumbnails for single
+	add_image_size( 'blog-full', 9999, 800, true ); // Thumbnails for single
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

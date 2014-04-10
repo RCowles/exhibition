@@ -69,7 +69,7 @@
 		<?php edit_post_link( __( 'Edit', 'exhibition' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 
-	<figure>
+	<!--<figure>!-->
 		<a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
 			<?php the_post_thumbnail( 'blog-thumb'); ?>
 			<?php /*
@@ -78,5 +78,5 @@
 			</figcaption>
 			*/ ?>
 		</a>
-	</figure>
+	<!--</figure>!-->
 </article><!-- #post-## -->

@@ -16,8 +16,9 @@
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			//box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			background: invert($color__pre-background);
+			//background: lighten(invert($color__pre-background), 4%);
 			display: none;
 			float: left;
 			left: 0;
